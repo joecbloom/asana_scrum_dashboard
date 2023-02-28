@@ -2,4 +2,4 @@ select
     id as project_id,
     name as project_name
 from
-    {{source('asan', 'project')}}
+    {{source('asana', 'project')}}
