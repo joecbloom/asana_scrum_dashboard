@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: asana_data_sprints
+  - name: asana
     schema: src_asana_data_sprints
     freshness: 
       warn_after: {count: 24, period: hour}
