@@ -1,0 +1,54 @@
+version: 2
+
+models:
+  - name: stg_asana__project
+    description: The project object from Asana.
+    columns:
+    - name: project_id
+      description: The unique identifier of the project.
+    - name: project_name
+      description: The name of the project.
+
+  - name: stg_asana__task
+    description: The task object from Asana.
+    columns:
+    - name: task_id
+      description: The unique identifier of the task.
+    - name: task_name
+      description: The name of the task.
+    - name: data_sprint
+      description: The name of the Data Sprint the task is associated with.
+    - name: priority
+      description: The priority rank of the task within the sprint.
+    - name: points
+      description: The score of the task in points.
+    - name: is_completed
+      description: True/false for whether the task has been completed.
+    - name: completed_at
+      description: Timestamp of when the task was completed, if it has been completed.
+
+  - name: stg_asana__section
+    description: The section object from Asana.
+    columns:
+    - name: section_id
+      description: The unique identifier of the section.
+    - name: section_name
+      description: The name of the section.
+    - name: project_id
+      description: The unique identifier of the project the section belongs to.
+
+  - name: stg_asana__task_section
+    description: A mapping table between tasks and sections.
+    columns:
+    - name: task_id
+      description: Unique identifier of the task.
+    - name: section_id
+      description: Unique identifier of the section.
+
+  - name: stg_asana__project_task
+    description: A mapping table between projects and tasks.
+    columns:
+    - name: task_id
+      description: Unique identifier of the task.
+    - name: project_id
+      description: Unique identifier of the project the task belongs to.
