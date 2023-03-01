@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  
+  - name: asana_scrum_dashboard
+    label: "Data Team Sprint Dashboard"
+    type: dashboard
+    maturity: medium
+    url:
+    description: >
+      A dashboard that provides a sprint burndown for the data team showing which sprint it is, the day of the sprint, points completed, completion percent, points remaining, percent remaining.
+    depends_on:
+      - ref('asana_scrum')
+
+    owner:
+      name: Joe Bloom
+      email: joecbloom@gmail.com

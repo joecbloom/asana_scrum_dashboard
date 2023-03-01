@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: asana_scrum
+    description: An analytics table with a grain of one record per day, providing sprint attributes and points remaining.
+    columns:
+    - name: sprint
+      description: The name of the sprint.
+    - name: sprint_day
+      description: The ordinal day of the sprint, 1 to 10 (less if there are holidays).
+    - name: date
+      description: The calendar date of the sprint day.
+      tests:
+        - unique
+        - not_null
+    - name: points_remaining
+      description: The story points remaining in the sprint.
+    - name: data_as_of
+      description: Timestamp the data is as of.
