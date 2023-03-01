@@ -12,5 +12,5 @@ dbt project for creating a dataset for tracking Scrum sprint metrics based on As
 ### Burndown
 ![image](https://user-images.githubusercontent.com/38505252/222024833-f5214875-ebb1-4d8e-a34c-68ab5ccbe79b.png)
 
-### Velocity and Points-Per-Day trend
+### Velocity and Points per Day trend
 ![image](https://user-images.githubusercontent.com/38505252/222024984-744611d4-f8e9-4128-a3ab-cb06cf405ba0.png)
