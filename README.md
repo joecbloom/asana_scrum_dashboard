@@ -2,8 +2,8 @@
 dbt project for creating a dataset for tracking Scrum sprint metrics based on Asana data as synced by Fivetran and seeds for sprint attributes (names, start/end dates) and company holidays.
 
 *Depends on*
-- dbt_utils package
-- Asana Task object as synced by Fivetran Asana connector
+- [dbt_utils package](https://hub.getdbt.com/dbt-labs/dbt_utils/latest/)
+- Asana Task object as synced by [Fivetran Asana connector](https://fivetran.com/docs/applications/asana#schemainformation)
 
 ## DAG of sources, models, and exposure created by this project
 ![image](https://user-images.githubusercontent.com/38505252/222024419-fb1ed2eb-8834-4e95-b5f7-c99e96842a72.png)
