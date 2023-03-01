@@ -9,7 +9,35 @@ sources:
     loaded_at_field: _fivetran_synced
     tables:
       - name: project
-      - name: project_task
-      - name: task
-      - name: task_section
+        description: Project object from Asana.
+        columns:
+        - name : id
+          tests:
+          - unique
+          - not_null
+
       - name: section
+        description: Section object from Asana.
+        columns:
+        - name : id
+          tests:
+          - unique
+          - not_null
+
+      - name: task
+        description: Task object from Asana.
+        columns:
+        - name : id
+          tests:
+          - unique
+          - not_null
+
+      - name: project_task
+        description: Bridge table between Project and Task.
+        columns:
+        - name : id
+
+      - name: task_section
+        description: Bridge table between Task and Section.
+        columns:
+        - name : id

@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: date_spine
+    description: A date spine including date and fiscal year (July-June)
+    columns:
+    - name: date_day
+      description: A single date at day precision.
+    - name: fiscal_year
+      description: The fiscal year of the date assuming July 1 to June 30 fiscal calendar.
