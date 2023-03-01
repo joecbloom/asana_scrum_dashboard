@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_holidays
+    description: Company holidays and observed dates to number of days in a sprint can be calculated correctly.
+    columns:
+    - name: holiday
+      description: The name of a holiday observed by the company.
+    - name: date_observed
+      description: The date the holiday was or will be observed.
+    
+  - name: stg_sprint_attributes
+    description: Attributes of the sprint, specifically the sprint name and start/end dates.
+    columns:
+    - name: sprint
+      description: The name of the sprint.
+    - name: start_date
+      description: The first day of the sprint.
+    - name: end_date
+      description: The last day of the sprint.
