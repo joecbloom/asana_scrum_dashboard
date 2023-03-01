@@ -9,6 +9,7 @@ dbt project for creating a dataset for tracking Scrum sprint metrics based on As
 ![image](https://user-images.githubusercontent.com/38505252/222024419-fb1ed2eb-8834-4e95-b5f7-c99e96842a72.png)
 
 ## Screenshots of dashboard based on final model
+This dashboard is shown for illustrative purposes only. It was developed separately in [Sigma](https://sigmacomputing.com) and there's no code for it in this repo.
 ### Burndown
 ![image](https://user-images.githubusercontent.com/38505252/222024833-f5214875-ebb1-4d8e-a34c-68ab5ccbe79b.png)
 
